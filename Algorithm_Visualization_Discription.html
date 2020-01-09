@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generic Page - Massively by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">My Portfolio</a>
+      </header>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links"></ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/austin-hodgin-69951450/"
+              class="icon brands fab fa-linkedin-in"
+              ><span class="label">Linkdin</span></a
+            >
+          </li>
+          <li>
+            <a2
+              href="https://github.com/AustinHodgin"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a2
+            >
+          </li>
+          <li>
+            <a href="/assets/pdf/My_Resume.pdf" class="icon  fa-file"
+              ><span class="label">Resume</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Main -->
+      <div id="main">
+        <!-- Post -->
+        <section class="post">
+          <header class="major">
+            <h1> <a
+              href="https://austinhodgin.github.io/Algorithm_Visualization/index.html"
+              >Algorithm Visualization</a
+            ></h1>
+          </header>
+          <div class="image main"><img src="assets/gifs/Sorting_gif.gif" alt="" /></div>
+		  <h2>Project Description</h2>
+          <p> This project is broken up into two parts. The first part is the sorting algorithm visualization
+            and the second part is a path finding algorithm visualization. I choose these two types of algorithms to 
+            visualize because I thought they looked intreating and their algorithms are used commonly within programming.
+            I wanted to practice and learn more about just pure JavaScript so I wanted this project to be done in as pure 
+            JavaScript as possible. 
+		  </p>
+		  <h3>Sorting Algorithms</h3>
+		  <p> This section of the project focused on creating a sorting algorithm visualizer. I wanted to be able to 
+        show the difference between how the different sorting algorithms worked and could be implemented. When you enter
+        the page you are greeted with a side bar full of options and a blank canvas. These options are the number of elements
+        that will be sorted and displayed, which sorting algorithm that will be visualized, the case (Best, Worst, Average) the 
+        arry is in and then finally how long you want each step will take in milliseconds. Once a sorting algorithm is selected 
+        the summary and pseudo code is filled in with information about that algorithm. The summary section describes how the algorithm 
+        works as well as shows the Big O complexity of the given algorithm. The pseudo code section gives a basic idea of the code required 
+        to implement the algorithm. This is not the exact code used to create the visualization of the algorithm as they needed to be change slightly to 
+        be able to visualize them. 
+
+        Once all the options are selected and the user presses start the canvas will fill bars representing the values within the array. It will then 
+        start applying the sorting algorithm to the arry. When two elements are being compared they will be highlighted in green. If they then need to swap they 
+        will be highlighted in red. This is done to shows how many comparisons and swaps are required to completely sort the array. Currently there are four sorting 
+        algorithms implemented.
+      </p>
+        <h6>Current sorting algorithms</h6>
+        <ul>
+          <li>Bubble Sort</li>
+          <li>Selection Sort</li>
+          <li>Insertion Sort</li>
+          <li>Merge Sort</li>
+        </ul>
+
+		  <h3>Path Finding Algorithms</h3>
+		  <p>
+      Coming soon!
+		  </p>
+          <h2>What I Learned</h2>
+          <h4>Sorting Algorithms</h4>
+          <p>
+            Starting this part of the project I had never done any visualization or graphics work before. I learned a lot 
+            about how the HTML canvas worked and the powerful things it can do. I learned that I was not able to translate 
+            directly from the algorithm to draw on the canvas. If I did that it would be over very quickly for small to medium size arrays making it 
+            difficult to see how the algorithm works. To slow the process down I had to take steps to create an actions array that would  
+            capture the steps that would need to be taken so that they could be animated within this canvas. Once the action array 
+            was created I was able to get it to be able to be stepped through in a fashion that would be able to be animated. This gave me more 
+            control over how the animation worked and the speed in which it could be stepped through. 
+          </p>
+          <h2>Languages and Frameworks Used</h2>
+          <ul class="toolsList">
+            <li class="toolsList"><i class="fab fa-html5"></i> HTML</liclass="toolsList">
+            <li class="toolsList"><i class="fab fa-css3"></i> CSS</li>
+            <li class="toolsList" ><i class="fab fa-bootstrap"></i> Bootstrap4</li>
+            <li class="toolsList"><i class="fab fa-js"></i> JavaScript</li>
+            <li class="toolsList"><i class="fab fa-js"></i> JavaScript</li>
+            <li class="toolsList" ><img src="/assets/icons/iconfinder_jquery-2048-black_167623-1.png"> jQuery</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section></section>
+        <section class="split contact">
+          <section>
+            <h3>Email</h3>
+            <p>
+              <a href="mailto: AustinHodgin@yahoo.com"
+                >AustinHodgin@yahoo.com</a
+              >
+            </p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/austin-hodgin-69951450/"
+                  class="icon brands alt fab fa-linkedin-in"
+                  ><span class="label">Linkedin</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/AustinHodgin"
+                  class="icon brands alt fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+              <li>
+                <a href="/assets/pdf/My_Resume.pdf" class="icon  fa-file"
+                  ><span class="label">Resume</span></a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <li>&copy; Austin Hodgin</li>
+          <li>Design: <a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

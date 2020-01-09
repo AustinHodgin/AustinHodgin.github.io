@@ -4687,3 +4687,21 @@ input, select, textarea {
 		}
 
 	}
+
+ul.toolsList   {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+li.toolsList {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+}
+
+li.toolsList img {
+	vertical-align: middle;
+}
