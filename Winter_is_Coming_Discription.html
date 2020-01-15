@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Austin Hodgin Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">My Portfolio</a>
+      </header>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links"></ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/austin-hodgin-69951450/"
+              class="icon brands fab fa-linkedin-in"
+              ><span class="label">Linkdin</span></a
+            >
+          </li>
+          <li>
+            <a2
+              href="https://github.com/AustinHodgin"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a2
+            >
+          </li>
+          <li>
+            <a href="/assets/pdf/My_Resume.pdf" class="icon  fa-file"
+              ><span class="label">Resume</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Main -->
+      <div id="main">
+        <!-- Post -->
+        <section class="post">
+          <header class="major">
+            <h1>
+              <a href=""
+                >Winter is Coming</a
+              >
+            </h1>
+          </header>
+          <div class="image main">
+            <a  href="https://github.com/HodginAustin/Winter-Is-Coming"
+              ><img src="images/Winter_is_Coming.jpg" alt=""
+            /></a>
+          </div>
+          <h2>Project Description</h2>
+          <p>
+            This project is defined as creating a system that controls
+            RGB(Red-Green-Blue) LEDs(Light Emitting Diodes) to effectively
+            control indoor plant growth during the winter season in Oregon.
+            Oregon’s winters are a hostile environment to grow specialty plants
+            such as herbs, spices, or foreign plants. The conditions outside
+            will be much colder, darker, and humid than the summer months. These
+            plants are not expected to grow well or even survive in such
+            conditions. Bringing the plants indoors to a more friendly and
+            manageable environment can prove to be a difficult task. Existing
+            indoor light systems can be expensive, and difficult to customize
+            and use. Research provided to the project by the client has shown
+            that some plants grow differently under different
+            wavelengths(colors) of light. The project will aim to produce a
+            system that can control the color, intensity, and schedule of a set
+            of RGB LEDs in a user friendly manner. With custom control over the
+            growing conditions, the plants will be allowed to grow well, while
+            at the same time reducing the impact on the user’s busy life. The
+            developed system will include a microprocessor that will manipulate
+            the color, intensity, and schedule of the RGB LEDs. Along side this
+            hardware, the development of an intuitive user interface will allow
+            an end user to interact with the system with minimal physical
+            interaction. The project is simple at its core, but many additional
+            features have been developed to increase functionality and end
+            usability.
+          </p>
+          <h2>Problem Description</h2>
+          <p>
+            During the cold and dark winter months, plant growth becomes
+            difficult at best, and calamitous at worst. In our state of Oregon
+            we are well accustomed to overcast, low temperatures, and rain
+            throughout the winter, spring, and fall months. Our client has a
+            desire to grow herbs and plants indoors during these long, cold
+            months. Solving this problem is a desire held by all members of our
+            team. Much like our client, we enjoy cooking with fresh herbs and
+            vegetables even through the winter.
+          </p>
+
+          <p>
+            Many plants and herbs such as tomatoes, basil, ferns, and plants
+            from foreign climates have an ideal set of environmental conditions
+            that allow for optimum growth. Variables such as light wavelength,
+            intensity, temperature, moisture, and pests all have an impact on a
+            plant’s health and yield. These factors lead many growers to bring
+            their plants indoors during the winter months.
+          </p>
+          <p>
+            Even in a climate controlled dwelling, the problem persists. Humans
+            and plants require very different living conditions. Residents come
+            and go from work, school, and vacation while plants have evolved to
+            expect the 24hr day-night cycle. Busy humans can leave plants
+            neglected or without light for days. Current interior plant lighting
+            systems can be expensive and offer little to no customization. Plant
+            growth systems that do not adapt to both the requirements of their
+            plants and their gardener’s schedule lead to frustration, low plant
+            yield, and plant death.
+          </p>
+
+          <h2>Proposed Solution</h2>
+          <p>
+            The client’s primary concern is solving the problem of interior
+            plant lighting. The features required to do this are clearly defined
+            in the required features section, but specific implementation
+            details were left to our team. Each of us have skills in an area
+            related to this project, and together we have the ability to go
+            above and beyond what was requested by the client. We have built the
+            set of additional features listed below that we believe compliment
+            the client’s vision for this project.
+          </p>
+
+          <p>
+            Given proper design and documentation, the additional features are
+            likely to be completed barring any complications. Features that are
+            especially difficult to accomplish, unlikely to be completed, or are
+            outside the primary scope of the project are listed as stretch
+            goals.
+          </p>
+          <h2>
+            Required features - v1.0
+          </h2>
+          <p>
+            <ul>
+              <li> <strong>LED lighting for a single plant</strong>  
+                <ul>
+                  <li>A simple LED strip with a single controller attached to a single planter</li>
+                  <li>Service running on a micro controller that can control the power state of attached LED lights</li>
+                  <li>Configuration settings for the light state is read from a configuration file</li>
+                  <li>Changes to the configuration file are recognized and applied by the controller</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Color and intensity Control</strong>
+                <ul>
+                  <li>User can select the color and light intensity of the light strip</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Lighting state schedule</strong>
+                <ul>
+                  <li>
+                    User can specify weekly and daily scheduling for the state of the light (Color, Intensity, Power)
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Zoning for individual control over multiple strips</strong>
+                <ul>
+                  <li>Controller supports individual control of up to 20 zones</li>
+                  <li>Each zone can chain light strips together on one data pin</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Simple user interface for basic control</strong>
+                <ul>
+                  <li>Simple interface to edit configuration settings and physically transfer changes to the controller</li>
+                  <li>All settings can be changed from this interface, though it may not be user friendly</li>
+                  <li>Controller recognizes configuration changes and applies them automatically</li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+          <h2>Additional features - v2.0</h2>
+          <p>
+            <ul>
+              <li>
+                <strong>Improved User Interface</strong>
+                <ul>
+                  <li>Hosted web interface on local network</li>
+                  <li>Easy to use and responsive interface that shows the current state of the system</li>
+                  <li>All system settings can be updated and applied over the network without the need for physical access to the controller</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Sub zoning on an individual light strip</strong>
+                <ul>
+                  <li>Multiple colors and intensities on a single light strip using LED indexing</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Flexible zoning and sub-zoning</strong>
+                <ul>
+                  <li>Whole light strips and sub strips can be zoned together for more precise lighting control</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Mobile web interface</strong>
+                <ul>
+                  <li>Web interface adds mobile support</li>
+                  <li>Android application acting as a wrapper for the web interface</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Custom enclosure with vertical lighting</strong>
+                <ul>
+                  <li>Custom designed planter that holds the controller and lights</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Environmental monitoring</strong>
+                <ul>
+                  <li>Monitoring for humidity and temperature using additional hardware sensors</li>
+                  <li>Web interface plugin to monitor humidity and temperature</li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+          <h2>
+            Stretch goals - v3.0
+          </h2>
+          <p>
+            <ul>
+              <li>
+                <strong>Modular light strips and enclosure</strong>
+                <ul>
+                  <li>Easy to attach light strips are automatically detected and setup</li>
+                  <li>Snap together enclosures allow quick and effortless system control</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Gardening guide built into interface to help user learn best gardening practices</strong>
+                <ul>
+                  <li>Interface provides tips and suggestions to improve growing and gardening</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Modular planting enclosure with snap together components</strong>
+                <ul>
+                  <li>Self contained enclosures with plug-and-play connectors for automatic and hassle free setup of multiple planters</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Irrigation system</strong>
+                <ul>
+                  <li>Hardware and software necessary to facilitate automatic or scheduled watering</li>
+                  <li>*Requires custom enclosure</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Wireless control over multiple plant growth systems</strong>
+                <ul>
+                  <li>Ad hoc style wireless system to allow seamless control over multiple grow light systems</li>
+                  <li>Support for large distributed systems, such as greenhouses</li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+          <h2>Performance Metrics</h2>
+          <p>
+            Defining performance metrics for this project has been a back and forth topic for this team. 
+            The client’s requirements are easily met by a team of four people, but our internal expectations 
+            are much higher. To avoid feature bloat and to guarantee the product functions per the client’s 
+            requirements at a minimum, the features below describe the features necessary to define the 
+            project as a success. Extra features will be added after the completion of these functionally 
+            required features.
+            <ul>
+              <li>
+                <strong>All features described by the client</strong> listed in section <i>Required features are complete.</i>
+              </li>
+              <li>
+                An alternative interface as described in <i>Additional features</i>.   An interface that allows all controller settings to be modified without <i>physical access to the controller</i>. 
+                <ul>
+                  <li>This interface will likely be a web server hosted on the controller, but is subject to change as the project evolves.</li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+          <h2>What I Learned</h2>
+          <p>
+            This project was done for my senior design course that had me work with three other people to complete this
+            project over the course of 9 months. This project had us create an RGB plant lighting system. I had experience working
+            with RGB LEDs before from other personal projects but had never done something this large before. 
+          </p>
+          <p>
+            One of the largest things I learned while working on this project was how to work with other software 
+            developers on the same project. Up to this point the only projects I worked on were small projects for class or personal projects by 
+            myself. So working with three other developers to work with a client, come up with what is realistically doable  
+            within the time given to us to accomplish the desired outcome of the client and then implement that plan was a large learning experience for me.
+            This allowed me to learn a little about how the real world works when working with a group of developers.  
+          </p>
+          <p>
+            During my time at Oregon State University the main Languages we used was C++. This is part of the reason we chose to do a lot of 
+            the back end in C++. We would come to regret making this decision when it came to working with web requests and creating an API. 
+            C++ requires a lot of setup and is a low level Languages an there were not many libraries that were not overly bloated for our 
+            project so creating our own was a struggle and taught me that it is important to look at all options and really think if this is 
+            the best option for the project as it grows. 
+          </p>
+          <h2>Languages and Frameworks Used</h2>
+          <div class="container">
+            <div class="item">
+              <i class="fab fa-html5"></i>
+              <span class="caption">HTML</span>
+            </div>
+            <div class="item">
+              <i class="fab fa-css3"></i>
+              <span class="caption">CSS</span>
+            </div>
+            <div class="item">
+              <i class="fab fa-bootstrap"></i>
+              <span class="caption">Bootstrap</span>
+            </div>
+            <div class="item">
+              <i class="fab fa-js"></i>
+              <span class="caption">Javascript</span>
+            </div>
+            <div class="item">
+              <i class="fab fa-python"></i>
+              <span class="caption">Python</span>
+            </div>
+            <div class="item">
+              <img
+                src="https://img.icons8.com/ios-filled/26/000000/c-plus-plus-logo.png"
+              />
+              <span class="caption">C++</span>
+            </div>
+            <div class="item">
+              <img src="https://img.icons8.com/metro/26/000000/sql.png" />
+              <span class="caption">SQL lite</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section></section>
+        <section class="split contact">
+          <section>
+            <h3>Email</h3>
+            <p>
+              <a href="mailto: AustinHodgin@yahoo.com"
+                >AustinHodgin@yahoo.com</a
+              >
+            </p>
+          </section>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/austin-hodgin-69951450/"
+                  class="icon brands alt fab fa-linkedin-in"
+                  ><span class="label">Linkedin</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/AustinHodgin"
+                  class="icon brands alt fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+              <li>
+                <a href="/assets/pdf/My_Resume.pdf" class="icon  fa-file"
+                  ><span class="label">Resume</span></a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <li>&copy; Austin Hodgin</li>
+          <li>Design: <a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
